@@ -1,0 +1,604 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "binned_xy",
+        "variant": "binned_xy_hex",
+        "name": "PetalWidthCm vs SepalWidthCm (aggregated)",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [
+          {
+            "column": "PetalWidthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "yDimension": [
+          {
+            "column": "SepalWidthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "Species_copy",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "gyr1",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADk0lEQVRoQ+2Xz2sTQRTH37alWhKz82aTrkgFFTzpSSUpiqCo6MGioOhNT6Ie9KIX8WA8iBd70YM//gOFgtKCLSrpRTEBD4IeBUHQpsnOzKap1WJciTq6bLLZbZrdVNNcwia7b97nfb/vzawCHfZROowXloGl4pjDDE/y3f+bA1wV7hhgCYpZHOMpfrBjFK4BtUChWZpig+zlv1wE/0PrAfTSAbqNbWcv2g3MOdmFKCabycO9h39b+o/Fl9AQYwwzlP4dqIyp1yk1L/kpgP+hlYEe0kd2ikGR8RM4yHs4J+sQxftm1vAPDKCoz9UN5g7zXTMLLZVnPC29VBJtVR6eCjfaj//Fvdo3MObwLk/y0/ZKBwGcRxzXOT/QjKKcr1yH+OVnbzOGtyjl55xxPC0d9pSeRsz08+aOtPbp7ZzkEtxTYWeFWq2qBJTfU7FYaq5Uer0e4Itcu5jGTDz9qwimGaPz899WJBKfP9WDcgN1BSZZMixS4gJmcYKn+H4ncCQXWT2bnJ1qxnL1nrEBj/Xz+kfZ4hUcj1+ttTlj+IhSfkjGNQz1VG9v5eGqVeWCYZARTRNHPC0d9lk6r6pnddO87Wbl6enYxvl5iw0MzBjO5GsPIH8PJL4t7ezZVlu4QMiuhBCTTivL62IxlpqZKb2ObMHHspftydeztJ/e9e7hLI7yFB8iOXJeJMXNVllYxskT8lAX4nCekCe6EPvylI7ojNVY0LJAYQzvaxo/VqtwdDOl5TeGgeOa5m+ye07pVoPKeFLRxVi6mdz8vy01E73OM26Wtk9it16tWre7u3LEOaWd/WoY9Limsfv1Ug4c2ALoVgAqNcoiTuic788j3tE5PzN1ESKrb8Csc3hVe7ZS6TlKKbvnBBNCRUJMXizi5XicX/OjSaDAU9Fo/1y5XLLvqc5hld9DLujPxLCzIPJaCHU9AIgqmNce23bgeluNtLRMrhUQdlCveIEqbESjm7Ry+W2ekKe6EHvticliFAo4lEjw0XrFqSYPACcVxSohCiFhvKAaKR0o8EdV3brGNF81AnazcvX3KphlKSe6ur7PhAa8mIOHXTWngot5SfDTq273BKowA1BNgK/2oeWWSKNtaTGAnmfpVgavxrIAuhSA715xi2kyEk/XHva9nlvo/4EqvNBkwrg/cOAPAH1rAebCgPGzRuDAfpII855l4DCr3Y61lhVuR9XDXHNZ4TCr3Y61Ok7hHyz/VUf/6NGOAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "binned_xy",
+        "variant": "binned_xy_hex",
+        "name": "PetalLengthCm vs SepalLengthCm (aggregated)",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [
+          {
+            "column": "PetalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "yDimension": [
+          {
+            "column": "SepalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "Species_copy",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "gyr1",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADe0lEQVRoQ+2XTWjUQBTH38R28aM285I268GbR0Hw0BYUhOIWsYh40HpRvCmCFBFF9GCrYNW74qloEQRLDz34cbBQUBBbBa9a0IsHu+k2M0u9tNU8mZVoSHdNsh9uuu1eNmQmk/d7//+8N2Gwxn5sjfFCQwDncmZXW9v8lF88x8FJwxDdQUEbAjgIlc1uSadSzb2I8sGaAHYcPGQY4mmx7doQCitLa5p7u5iFG0Zhb4+qfwUVBVbNS5zCtq73Wfn8aFj3aBxgxElLrKyuxRJQqhL/K1mJU/hbS8tOrbl5iAG0KnA/lLpmDL66LjmmKc83BPCsrt/cwFjOBdiTlvJYAPgRAOhEtAjwY4Cx5ntR966neiIUtn02Dl7Dp5+nl5bI2b59YV4F7RWpOIXKb/FEAKuAPFAb8ZYlxBUvyGAVFoKPIcqj5dg5UVV6jvOJdikzWc4n0lJmxA2+G6/JD37gXE7PMKZdMk1xYH5e7zPN8GqeuD5sG0YfEJ1Vgaki5SmdG8RJrb8Q7gwRmab5W9WgleMqnQhL++xcaEmOg88NQ/QG1YkLl6ijpa3rx618/okKKsv5GAA81hg7SUR60xe25LrwirHlccP8/pEBuIV5WdybStEgouwJO5iUGq+bwv5q7BUtL8imz3/DXd4BM2khzviLWNxWFFqlcRonRWe00045mVaw/ueCJysb8bklflu6GjYOBebTfJ/slK/URD7Fj8guOV5pEmzEZwCw2YPLcj7OGFskIiMtZY+NOGIJccqvpOvCMAD0tbWJw+Uktqw97IFWAbigqgfsqUyuO5rO5+8HLR73KyhqQkruYQWoFqm2tWcRn24T4lCxPRz1oyEqXCyFcRpPAMEu0mij7JD9lSocfPkcwNZ2gAXvvo34whLiYCUwUZ4tXaXfwCZswgwAXFAqVxs4GFxQ8SjBlzPnn23Js7VamIB+MmIvRZe4E/aisODDxsPWr2S89B5+iyOkEWfAWivZyzbikCXE1TDIaref2AcPPsWHGTALGLRUAjzH+UC7lNcTD6wggy0Jp/ByFEtXYrlaP7vC0n+K03vYjIQPgaC9EoVrDRB3/ZLAxrRxkYh6iNFrDbRup9PZH3fxJM7/7wePeiehKHCte249oYsDv8NzokPcrWdgtXp33b6HawUUtu46cFiGVvv4usKrXcGw+NcVDsvQah//BWDizDgLQ2j9AAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "binned_xy",
+        "variant": "binned_xy_hex",
+        "name": "PetalLengthCm vs PetalWidthCm (aggregated)",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [
+          {
+            "column": "PetalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "yDimension": [
+          {
+            "column": "PetalWidthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "Species_copy",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "gyr1",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADDElEQVRoQ+2XTWjUQBiGv0mzFrXdnUmyWxVUilS8erALHoQe/MFSC6I9ebZIvXjzJHvTXkWoSi+CiqiXRdSDaNGTbRXx4qHgRcTSspuZbGtr092MjO2UuGTbbUma7E9umwmT75nnnS+zCBrsQg3GC5EHNk1yT9PooBRjmmRM02jPVkXVAvCYC+4bAPx0nNJbwyhMSPjNLEKtAUOxSPtUldzVNHqpEvD8/O6O6enfrKsLlsqTEHlgd5S9YuwVb7EQ4lmvscgCy6IlpCw+l2s/EouhzkSi8NprAUwTZwHQfcfhg4bBztWM4UrAGzUr0yQvNI325fP4ma6zizUDLApdhZ7inOu6zi5Ugs3l9LRh5Mc3WgwxHslI5x6SrHIW4iLG5R2YUvzctpeHYrEdT8rHq+nWkQHOZEDJZMARFvKP8DU4A8dFJMshGNMu23bLY0UpDhsGHXKPmybJahrtX890ZIC97MwSMpaiWz9keIFHBlgUJwCdUun6YqHwtRPgj7znBV1NfCMN/AkgdoCQUQDYk6L09CzGR1OMfalkOZ9PDOi69bSaRuV+JnTDM4nElQ7LGhFgsjBhVPxWv/+7M+U+S28WMNTPkrTlhvMA+ME539vB2CkvOMuKa7ZdbE0mF6a3Ar+thn8B7NoHsEAxPmgD3EYIiX2aAoBFAHjVglC25DgPlhjr3b9yz/drW4Hd1UvbItJIUQZkYwqiMwe+h9cregbjGwihHr8/N9VGIRDDHCCGAJZFERygFQEszRLyMkVp79o+xngUcT6StKzP1Rbrx3OBAJdF93/Q1cOEbFzbbTpwYD+s+DlHE9jP1YziXE3DXlbIxMqxj3b7+88ljARUNNw+3n54Lj03JYpqCGABKYxKWA68hDh6Q9N0OAwzfr2zouG2D21Jdad6E3F0SILXbaTjH+NdqqL2c85PcuALLM3Okwnyri6BZYTLI1TXkV7bv+PkFiBI14NZKdBzD5NJcpUeo3eAA8KT+ATrZu/9ahphz9M8eIRtIOj3Nw0HvcJhz980HLaBoN/fcIb/AsDWbzidw7mYAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "binned_xy",
+        "variant": "binned_xy_hex",
+        "name": "SepalLengthCm vs SepalWidthCm (aggregated)",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [
+          {
+            "column": "SepalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "yDimension": [
+          {
+            "column": "SepalWidthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "Species_copy",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "gyr1",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAEaElEQVRoQ+2YT2gcVRjA39tuqxtS531vpmPbUEQ9aQ+C6G6jIiTaYtVY0FoPJehBEEEST0pFzCqFnjw0HlTopdiirfHQWhWtuCDVdrfgrXpQ8CBpk+3sfG8kZEnJ7siQTDOZzOz8ydvdYDOXXea9933f7/v3vl1KbrGH3mK8ZB1YRsShDB9jAV+XIUu2jLZEGCpQwjwOyDZWhjwpwFGAUesyQOLKkALsKsv9muurP1KfjKu8G/vkAldyO+r5+j/dAPHqNAxlUNOsn4LsWBUwv8hfMvvNU60AoQzfYAGf6aQTTBNKnAf3kFUB+2sTynAcC/hyJ+GCdE1NKXdv3Wr9LT3CfmDlkrLf2mVNdAK4Vuu9X1Vnfk+qKzLCYR222523Vdq2ckIkcNhhB9hZc+7bFan9f7mHWYX9IPJijwO6DPgSfIu78OnF95/bxL4i8uJwkLOqAN/piHuTpqKs/ZER9kbP/5026CdOlw7bEwJc0nGpg9ZqcFpV8YAsoCg5gcBBAKzCfhR58aQr0BvhKCXuehVgGaz73igulIdWxAHThCOc4yG3Rp1PZ825ZtzzpgknOceDcfV69wUCszIbEwXx/mKKnsE87iMXyGbYBGedmmWX2TBt0r2Ekm1JZuarhPRsJ2TWb6gxxiboQ/R2dQifdddqNWU3GWlMkvHseMYmTdDEnkmAR/sQf7FtkqGUNKUBewUFRbsdHTqo614/CKUtJ3Gg9hmbUIfF/jSA/jMrItwqVaEMbxNKngrqzI5go7f3Pm1m5g/nu5t+3jR2UnfDqF1qHKUDTvoGATgpPX8veSAzSnKLKb5sarKsO3izmT0GYD4fct4pgS84x0+D1oNTusIev5G98dfsg7NXw7yqXFYOWw9b74atXwcY0hDPG4yd2yKWav+mIxg7pgvxqj1ObqMjZK4KcFzHhSltmZMMOKtp+FwI3DjnOJIk8qFdGspwDgtLNZVEqLdJEUJmdVyapf2RN4pwWiviAS9kWHPz25Bm+Ii8ltKAOmdcYzyd9WZq+t/5OvERHfFQVGd314OgTRNeS5TSSSGrjH2lC/GC9xwiu2vuHtqfIUTLjJKd6hi+QSlpeKMnhDI4P9+41mxu1LJZ8g7nKweSKmOjuhBHw2wyDLZP08SZuDZLiXBYCk4BnNowN/cmfWvTCa0onvDX52ImDHGOX6dJz7iQkfdwGkHeM0H16H3XbjjpKe2pz8d0xAt+B7lwUwAfbfze3qzmxSthTqy9p+xWP7DOh10xYT/k0walZUorZeVFq2B9GdYdpznvv9M0L4YBT3P+YfbP5r+qujC1BT2iqAwqRetnSsi8jC4c5YiWwEETVdBAEQYcpTxuJ44rJ86+lsA9v/VsbzV8xFHg3+NMW94pa5qxYV2IE5QQO428pGekdOkkSv3Ak7ncjr565/7p7DhwEue0Y29q4LjjXzuMXo3M1MDXON+5zTSvrEZ5N86mBu6GsTJ0rgPL8OJalrEe4bUcHRm2rUdYhhfXsoz/AGrgWUdeZ1JwAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    }
+  ]
+}

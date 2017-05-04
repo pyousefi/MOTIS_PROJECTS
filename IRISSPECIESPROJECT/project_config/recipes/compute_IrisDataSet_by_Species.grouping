@@ -1,0 +1,112 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "Species",
+      "type": "string"
+    }
+  ],
+  "values": [
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "Id",
+      "count": true,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "SepalLengthCm",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "SepalWidthCm",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "PetalLengthCm",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "PetalWidthCm",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    }
+  ],
+  "globalCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}

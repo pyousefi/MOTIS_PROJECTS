@@ -1,0 +1,182 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "IrisDataSet_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "binned_xy",
+      "variant": "binned_xy_hex",
+      "name": "SepalLengthCm vs SepalWidthCm (aggregated)",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "genericMeasures": [],
+      "xDimension": [
+        {
+          "column": "SepalLengthCm",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "yDimension": [
+        {
+          "column": "SepalWidthCm",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [
+        {
+          "column": "Species_copy",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        }
+      ],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "strokeWidth": 1,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.75,
+        "colorPalette": "gyr1",
+        "ccScaleMode": "NORMAL"
+      },
+      "colorPaletteType": "LINEAR",
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAFLElEQVRoQ+2ZT2hcRRzHfzPZJTXJ9r15u9nY6MESeirFg7opiIfEVK0pQUQlJG29SItoVDwEDAoPLHoTbb0IudmAf4qUQi39k0YoQpNcPBjoJVQwNNnt7s572ebPmuSNzO6OTN/O7r59eamEJJfsvpn3m99nft/fnxAEO+wH7TBe2AUOIuJkikwAQJImaH8Q9oK0EViE997e2794ePEH7hwHpgnaJTtqTBkHs4nsTJDO+7EVCLB2WzuCMR5xQ8oOFaLOYJp20mE/jgb1TiDAbrBq4EE57tfOLnA9N6fKVdX7XvfVc3a1vdlsoWiCYTxcR/izTUW4APIc7QYETDigT+oXrU7rtf9T5pal9TgOzhsGveW+mE0Dc4M8Z0utqGB/2+aw9rvWgcN4tBKASqqRG5ForieXCUqeleyUZHvdMOgX9ZxVNcLapNaNEf6sHuB6Dt/M3mp5Ws1uTUkLqUqyvUYT9EtZwrKMpefKSStFigUlTmkXd5oxyCMEjaoCs5kLqfRuTWB9Wv8ov5G/sHJ4ZU6WcGmQWGWMzSCMnhEqkC9IdegCIf2h9fU/YrncnUzGGGfnGMYflFfUdJq8H4vRb4OGrglc7cAg2k3aJBMx8+H2wRg0UUoub0XUlcDGlPELA0aEjBljNkJIk3OZw+ZxfmD52eV5r1HgcuZSlvffN/W+VtO6xMHREKQQgjgHNU3ApgmOyNWNO+wW60UvlFLhLAAc8nMhSmBF3pa1Gz/RVQELeA7Mpe0eGAQwzIC13ge6yP1Kg0Wty/dcpVWXEHS/5XA8avdOQVN4iVxuHaNd2fOlqel4+dRUC061XgZMpsj3NEFPiM0ikry/4gg+Z3faA2SS/AQAzbST9rqNJnX9YptVnLTmdf1kCKHnWyk9zb+nTf1mzLS6i5/JpZhJ++T3OTAh9MUU0a/hXtRQAE6Rq3CdLRiD1tt8byajfxWNWh8zBghJEx5fW1pq2tfcvDyfTpORWEzdn1XAhbYhtxoZHjnoL4bZU6p1/kzIdqGlJY7D4R/5M5G3smydswDuYiXku94BgD8snuqu4P9JXDErl9byAJXbXLmkZ6AFDsIDHlmHOZ/bnfZNpXSuQjO8DEvutblIJPpkLpcR1fdvgMcaCfk1NAvAfoP56Ot0gF8Ke895p+2MPZu9QiaMo0W5cvmuDwEwx7nXZtuDfF9odm3IMB78Kc5hDMIIwZr4Li4gk6GvHDgAHJarYBwANqJR6yW3fxVzmAMzYONWwjrjJ1fkdlN0vGBl2jDosFy8VMBcnXFKj1Urcm7g1VXa294Oy4WL26q/lsShKseEpLmcOTzfyyUsT1r8WTKpdYTDeJR/9tNm6g3GpgaPasByPqf2kSv4LbYU+8Z6g09aDT/DydYe+qo7StsGWL5ldwQFOP/NAKbbKB0W7afe6HjdH6ikKdWfZgx9zaORJGQMAbS7p6cCtOOcB4yPF4rVE6snoisrc8Lhu3dhz/79sMq/L34Sif7TGLrgrtiU6jcYQ2uGQY96BfWyr25JZzLaEYTwCAdWRVOKKAfaw4GrSTX5qdbREMKjlVpU0DKvG1iWqDuytda8RGCr91QFrjQvJwl5FwEci9PySWuWEC3C2Gjcst6s5XxS0zrabHv2vqadbrXt72rtD2LdF7BcgVVOlKSejNPyf7W4WxQDyCOARpVaggB026gFPEgTdEx18AJA8+NQPmlthZNB2vSVw0E68Kht+Qb2MvY9ahgv5+0Ce7ml7bzHd4S3K/Qu8HaNnFe/d1yE/wXpCL1HFSUOhgAAAABJRU5ErkJggg\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true
+    }
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "SepalLengthCm vs SepalWidthCm (aggregated) on IrisDataSet_prepared",
+  "dashboardCreationId": "kwurRMj",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493722656797
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493722656797
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

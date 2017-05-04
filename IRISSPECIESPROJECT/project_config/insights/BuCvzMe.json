@@ -1,0 +1,183 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "IrisDataSet_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "binned_xy",
+      "variant": "binned_xy_hex",
+      "name": "PetalLengthCm vs SepalLengthCm (aggregated)",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "genericMeasures": [],
+      "xDimension": [
+        {
+          "column": "PetalLengthCm",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "yDimension": [
+        {
+          "column": "SepalLengthCm",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [
+        {
+          "column": "Species_copy",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        }
+      ],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "strokeWidth": 1,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.75,
+        "colorPalette": "gyr1",
+        "ccScaleMode": "NORMAL"
+      },
+      "colorPaletteType": "LINEAR",
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADjElEQVRoQ+2Yz2sTQRTH35skYCvt7qRNUire9OytSvGioIJiteBFRAQ9FBUrXlWkiIpH8SDS/8CTqFCwoL14aW/iRfzRi1hIm2Y2SpM2zebJJI4dtptkk2yajW0uCZvZmfeZ73vfN7sI2+yDnc6bSplnEGGkr8+6oliWl/lUOGzfNIxfX518HQ+cTvMZCRWNiiMKzu2a+q/jgZ0KVoOVY3eAO62mlaIy7nwexgcGxKdqDB2rsASVdSu/iWgdESN6HVeC7mhgJ1THAi/ysvPGxYbz+lVqgVRYAiNRIWZZx3TQhQXoHhyEbDPwgQSWQBI6/L2MplJVNyhVv84eXGszAgMsAWUKJzl/LhkRICaDD32DbKFQvJFIZOY3DApWolFrtFbPdYMPFLBbgLrKusJqrBej0ucNBHDJpIjWATGigpNqL6fMd8iQyWtEZCNiSA+ec3ECEfK10jiQwE4gCeymqB58veoG4mipWpDehlIT5bbE9gHAyc36eX1QCFQN/zMpwxjrtu2XuUjkheq7EpiNA8AUAJ6iW7ZN/YyxO8qZncqmUubd/n7rgZfUblsNK2BnkEpxaVZuKduIMweihhcN4xwwdl0PRlcYYpRh59EoPi2P6J/w59TVPoV7e/dDKDRZEVjW8DjAlgHzOT4jhsq7Kn+rwNQ1L/Wij0n29AxjOPxQqeg0KwKILHE+rZ+fm03fukyrBIkwaRfs+VAo9FiC6ptQL7AcXzouAlzKE51liKMEkEeASFyIo24PDOk0fy9fUjTSfirFVzGldVXlzY0qqy+sq4pEFiGabimtrqln3kY2t25geYM5a8odBkTEIhWfMWTX/AAnAIYAxZ9dXXv35HI/5BpJ07yIiJcdKX04GhUftgzYqbJfSrsBuNWwn6BqrpouraD9UFYtKlObAL4khBhrBVS1OSsCm3PmtDVkHS8BE/wWB8VI4mMinjyQXPQSpNvBYsk078cs616lQ4eXeZsd49m0nAvVUtzZdpxtqdnAG72/IrAxZzzKDGVu/1V4BRB2A8EqIOyqBVtqQab5Om5ZI3/T93NCiKtLnJ+OCfHGLdhWOHJdfVgNbta4vL6QaxuwblJ+nLAaTb1W3bcppSUkFemJdch6xWf5W0IKIyDzksatCtLPeT2b1rYAXguvXciuZgUMQ87PXW7nXFUV/l9U1Te45kmrnWq0Yu0d4FbsapDm3FE4SGq0IpY/Iga9OCviVtsAAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true
+    }
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "PetalLengthCm vs SepalLengthCm (aggregated) on IrisDataSet_prepared",
+  "dashboardCreationId": "kwurRMj",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493808037950
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493808037950
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

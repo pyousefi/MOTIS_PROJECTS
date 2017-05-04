@@ -1,0 +1,311 @@
+{
+  "guessPolicy": "KMEANS",
+  "preprocessing": {
+    "outliers": {
+      "method": "CLUSTER",
+      "min_cum_ratio": 0.01,
+      "min_n": 1
+    },
+    "per_feature": {
+      "PetalWidthCm": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "DoubleMeaning"
+        }
+      },
+      "SepalWidthCm": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "DoubleMeaning"
+        }
+      },
+      "Species_copy": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "LongMeaning"
+        }
+      },
+      "Id": {
+        "generate_derivative": false,
+        "impute_constant_value": 0.0,
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "REJECT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "autoReason": "REJECT_IDENTIFIER"
+      },
+      "PetalLengthCm": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "DoubleMeaning"
+        }
+      },
+      "Species": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "CUMULATIVE_PROPORTION",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "Text"
+        }
+      },
+      "SepalLengthCm": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "dssWantsToModify": false,
+          "recordedMeaning": "DoubleMeaning"
+        }
+      }
+    },
+    "numerical_combinations": {
+      "pairwiseLinear": false,
+      "polynomialInteraction": false
+    },
+    "reduce": {
+      "enable": false,
+      "disable": true,
+      "kept_variance": 0.0
+    }
+  },
+  "modeling": {
+    "db_scan_clustering": {
+      "epsilon": [
+        0.5
+      ],
+      "min_sample_ratio": 0.1,
+      "enabled": false
+    },
+    "spectral_clustering": {
+      "k": [
+        3,
+        5
+      ],
+      "enabled": false,
+      "affinity_rbf": false,
+      "affinity_nearest_neighbors": false,
+      "affinity_sigmoid": false,
+      "affinity_polynomial": true,
+      "gamma": [
+        0.0
+      ],
+      "coef0": 0.0,
+      "seed": 1337
+    },
+    "ward_clustering": {
+      "k": [
+        3,
+        5
+      ],
+      "enabled": false
+    },
+    "kmeans_clustering": {
+      "k": [
+        5
+      ],
+      "enabled": true,
+      "seed": 1337,
+      "n_jobs": 2
+    },
+    "mini_batch_kmeans_clustering": {
+      "k": [
+        3,
+        5
+      ],
+      "enabled": false,
+      "seed": 1337
+    },
+    "gmm_clustering": {
+      "k": [
+        5
+      ],
+      "enabled": false,
+      "max_iterations": 100,
+      "seed": 1337
+    },
+    "mllib_kmeans_clustering": {
+      "k": [],
+      "enabled": false,
+      "seed": 1337,
+      "max_iterations": 0
+    },
+    "mllib_gaussian_mixture_clustering": {
+      "k": [],
+      "seed": 1337,
+      "enabled": false,
+      "max_iterations": 0
+    },
+    "h2o_kmeans": {
+      "k": [],
+      "enabled": false,
+      "seed": 1337,
+      "max_iterations": 0
+    },
+    "two_step": {
+      "kmeans_k": 50,
+      "n_clusters": 5,
+      "seed": 1337,
+      "max_iterations": 30,
+      "enabled": false
+    },
+    "vertica_kmeans_clustering": {
+      "enabled": false,
+      "k": [
+        5
+      ],
+      "max_iterations": 50
+    },
+    "metrics": {
+      "evaluationMetric": "SILHOUETTE",
+      "customEvaluationMetricGIB": true
+    },
+    "custom_python": [],
+    "custom_mllib": []
+  },
+  "sampling": {
+    "extractBeforePrepare": true,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "instanceIdRefresher": 0
+  },
+  "id": "uPPwh4eO",
+  "initiator": "admin",
+  "taskType": "CLUSTERING",
+  "name": "Cluster data",
+  "backendType": "PY_MEMORY",
+  "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+  "sparkRepartitionNonHDFS": 1,
+  "predictionDisplayScript": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "predictionDisplayCharts": []
+}
