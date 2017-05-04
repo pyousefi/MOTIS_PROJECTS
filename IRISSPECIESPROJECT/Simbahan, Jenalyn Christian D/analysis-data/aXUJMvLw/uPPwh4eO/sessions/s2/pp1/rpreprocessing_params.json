@@ -1,0 +1,147 @@
+{
+  "outliers": {
+    "method": "CLUSTER",
+    "min_cum_ratio": 0.01,
+    "min_n": 1
+  },
+  "numerical_combinations": {
+    "pairwiseLinear": false,
+    "polynomialInteraction": false
+  },
+  "per_feature": {
+    "PetalWidthCm": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "SepalWidthCm": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "Species_copy": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    },
+    "Id": {
+      "generate_derivative": false,
+      "impute_constant_value": 0.0,
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "REJECT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      },
+      "autoReason": "REJECT_IDENTIFIER"
+    },
+    "PetalLengthCm": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "Species": {
+      "category_handling": "DUMMIFY",
+      "missing_handling": "NONE",
+      "missing_impute_with": "MODE",
+      "dummy_clip": "CUMULATIVE_PROPORTION",
+      "cumulative_proportion": 0.95,
+      "min_samples": 10,
+      "max_nb_categories": 100,
+      "max_cat_safety": 200,
+      "dummy_drop": "NONE",
+      "role": "INPUT",
+      "type": "CATEGORY",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "Text"
+      }
+    },
+    "SepalLengthCm": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    }
+  },
+  "reduce": {
+    "enabled": false,
+    "kept_variance": 0.0
+  }
+}

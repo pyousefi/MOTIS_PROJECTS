@@ -1,0 +1,290 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "Avg. of PetalLengthCm by Species",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "Species",
+            "type": "ALPHANUM",
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of PetalLengthCm, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of PetalLengthCm, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "column": "PetalLengthCm",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAzUlEQVRoQ+2ZzQ3CIBTHYZLO0BG8s0rPdgS9OI3x2iW6AIuoiRfRCHkcIO/Jr9eSJv9PHtS7wR4/GF4H4H9X3KzC0/G6ZcXxbo+nsPx6D2ArlkbhVCks/WaDDJNhpQyYKK1pvc3ucb/kOIzncJDyC2CNLY3CX/7F0oVAk2EyrOC0RGlRWgwe2Z6mpWlpWvrlga4XAGxLWrelUiNWDfxWzsMATqyIwqUjHZb+ZKfKLS3/LZFhMiy7XB1u8JDR0nZV19GyLRTZ1wEs48nuqidSJ1A4m3uQNAAAAABJRU5ErkJggg\u003d\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "binned_xy",
+        "variant": "binned_xy_hex",
+        "name": "PetalLengthCm vs SepalLengthCm (aggregated)",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [
+          {
+            "column": "PetalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "yDimension": [
+          {
+            "column": "SepalLengthCm",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "strokeWidth": 1,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL"
+        },
+        "colorPaletteType": "LINEAR",
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADzklEQVRoQ+2Zz48MQRTH35sxLPFjSTaLhAgXbi7ccdj4cZJInIS1XW2tH2ET24OVEez0SuyB2E13DevkDyAIiR8nZ3FyIRKREAlWLHaaflLT3aMz2zNT0z1jeoe+7Oykqt771PfVt6p6EP6xB1uBVzH1x5xpmzyWHkMfBSArp6aPlvK1DDDSj+2mmvkmAMUEiL/+SfDAWwLYr+KukWNz2+d33g2CFe1aArj7enb19e70KxccFVN/1NLAhRImygPi7HKgM7qkmXFhGWHypoAgG6YSSfxsKgO7ZQx4Rpa0Z0p+wGrKxlZhpzxhkqvaDhnFam0TO4W99cjVdJeAEXtqTtUOis/7Lg91jB85+cGDVAz9Lle1bbVAxw7Yv496IKJcu0czq5Oz2q6Jz/6Sli3lWJW0YuoPkeA5IawvJEbwXSjngn0CgMUCbH9uZMm1nuMfi8AEea5qhUqQfWKh8DQTctdwOSVntMLMOLeGMJUr57h/1MTPgNQexpn9fWKlMNkwgQAL+AFty97xi0sTeWtdEpNngIAIwEaEpJv8FNiQEu16R7OLxw6mRdlLPbECLhoL0Q9CbCsl8AzKfzsqvSlVo24acFCiijl8G4Dmu8aVB4RJzrSdBec2sle4mj4s+hHhk5w6cFZ8zwyWMlXTqgbadJcOBnaudZXWaa2Klo7XVIX9+2xBRfciz4zMPMK2O1ENKkh1aWDF1C9xpvXLls60dgQICOR9zwz9FgHMBYRZP62fe2YnUxvsBB32r1OntOkLIKY4q+1EVS7PQGD/G4Moe54XNOgNRHFcG6YgAXNEW/+pqR5xa1JYBET61U+YFMqK49xWzrR7YRV2xoNBQjjnU26ha1BC+QlAaBexMplM4u3ytoduXIUzjYeNK72GC24IYCGAKKfiC7KwgR1g+x1hYmmlMUQsbw3XI640sGcijTCOIOCo7isrREXTcu+m3wHoKyB21GvGmaH3mqo25k8yFsA9PLsZCQdLDUV2Nsu1+1tw0qalGPowIGz0dZgAgEXif8v6dexG36lnlaALlWHBKd6nPXVORnAfEbq8Ctl39fyK8b7Tb6JOXJj+Fbel4AHxAWcD2WrASPjeVAd2N2p7CQMr+lRcw0ElHaYcZfvItgsLGwjsP1GVXMxfcqb1hElKto9su3oDF3+YKgEO/K0mSvBm9J1W0nvHsqtu9KZfOwcFek+Inc5hYGitqZ580Ywk6xmz7Bqu90mrnklHGavq5SHK4HHsGwjMDH2lDXQop6ZPxDHpKDlJ34ejBIlT3//AcVKjEbn8V7gRsxqnMX8DQnTiOPh/E1IAAAAASUVORK5CYII\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true
+      }
+    }
+  ]
+}

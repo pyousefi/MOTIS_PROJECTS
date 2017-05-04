@@ -1,0 +1,17 @@
+{
+  "algorithm": "KMEANS",
+  "k": 5,
+  "n_jobs": 2,
+  "max_iterations": 0,
+  "epsilon": 0.0,
+  "min_sample_ratio": 0.0,
+  "gamma": 0.0,
+  "coef0": 0.0,
+  "seed": 1337,
+  "custom_has_k": false,
+  "ts_kmeans_k": 0,
+  "metrics": {
+    "evaluationMetric": "SILHOUETTE",
+    "customEvaluationMetricGIB": true
+  }
+}

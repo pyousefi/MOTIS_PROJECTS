@@ -1,0 +1,19 @@
+{
+    "resolved": {
+        "n_jobs": 2, 
+        "algorithm": "KMEANS", 
+        "coef0": 0.0, 
+        "epsilon": 0.0, 
+        "k": 5, 
+        "custom_has_k": false, 
+        "metrics": {
+            "evaluationMetric": "SILHOUETTE", 
+            "customEvaluationMetricGIB": true
+        }, 
+        "seed": 1337, 
+        "min_sample_ratio": 0.0, 
+        "ts_kmeans_k": 0, 
+        "gamma": 0.0, 
+        "max_iterations": 0
+    }
+}

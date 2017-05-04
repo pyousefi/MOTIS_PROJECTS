@@ -1,0 +1,12 @@
+{
+    "details": {
+        "Species": {
+            "levels": [
+                "Iris-setosa", 
+                "Iris-versicolor", 
+                "Iris-virginica"
+            ], 
+            "with_others": true
+        }
+    }
+}

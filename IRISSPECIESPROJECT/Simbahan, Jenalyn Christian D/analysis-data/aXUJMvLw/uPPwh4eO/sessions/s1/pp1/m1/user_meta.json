@@ -1,0 +1,7 @@
+{
+  "description": "KMeans (k\u003d5)\nCluster outliers\n\nTrained in 1 seconds on 150 records\n",
+  "name": "KMeans (k\u003d5)",
+  "starred": false,
+  "clusterMetas": {},
+  "activeClassifierThreshold": 0.0
+}
