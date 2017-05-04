@@ -1,0 +1,112 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": true,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": true,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": true,
+    "exportAllInputManagedFolders": true,
+    "exportGitRepository": false,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": []
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "HR_comma_sep",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 566778
+      },
+      {
+        "name": "HR_comma_sep_prepared",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 531849
+      },
+      {
+        "name": "HR_comma_sep_prepared_by_left",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 312
+      },
+      {
+        "name": "HR_comma_sep_prepared_by_sales",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 1821
+      },
+      {
+        "name": "Model_analysis",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 1578
+      },
+      {
+        "name": "model_test",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 1105750
+      },
+      {
+        "name": "satisfaction_affection",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 356644
+      },
+      {
+        "name": "test",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 148
+      },
+      {
+        "name": "xgboost_annalysis",
+        "type": "PostgreSQL",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 6356
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "eadbYmPP",
+        "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on HR_comma_sep_prepared",
+        "size": 4644734
+      }
+    ],
+    "includedManagedFolders": [],
+    "allAnalysisData": true
+  },
+  "originalProjectKey": "HRANALYTICS",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "4.0.1",
+  "generatedWithDSSConfVersion": "15",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "1.1.2"
+    },
+    {
+      "pluginId": "geozip",
+      "version": "1.1.4"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "0.0.1"
+    }
+  ],
+  "requiredConnections": {
+    "filesystem_managed": {
+      "name": "filesystem_managed",
+      "type": "Filesystem"
+    },
+    "postgres": {
+      "name": "postgres",
+      "type": "PostgreSQL"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "eadbYmPP"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Full report of model Prediction (RANDOM_FOREST_CLASSIFICATION) on HR_comma_sep_prepared",
+  "dashboardCreationId": "tnHuI3E",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493655884428
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1493655884428
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

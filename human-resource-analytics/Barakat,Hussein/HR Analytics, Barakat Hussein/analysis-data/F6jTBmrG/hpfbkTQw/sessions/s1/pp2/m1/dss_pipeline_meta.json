@@ -1,0 +1,12 @@
+{
+    "algorithm_name": "LINEAR", 
+    "columns": [
+        "Work_accident", 
+        "average_workhour_class", 
+        "last_evaluation", 
+        "number_project", 
+        "promotion_last_5years", 
+        "salary_coded", 
+        "time_spend_company"
+    ]
+}

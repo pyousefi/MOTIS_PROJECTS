@@ -1,0 +1,25 @@
+{
+    "details": {
+        "salary": {
+            "levels": [
+                "low", 
+                "medium"
+            ], 
+            "with_others": false
+        }, 
+        "sales": {
+            "levels": [
+                "sales", 
+                "technical", 
+                "support", 
+                "IT", 
+                "product_mng", 
+                "marketing", 
+                "RandD", 
+                "accounting", 
+                "hr"
+            ], 
+            "with_others": false
+        }
+    }
+}

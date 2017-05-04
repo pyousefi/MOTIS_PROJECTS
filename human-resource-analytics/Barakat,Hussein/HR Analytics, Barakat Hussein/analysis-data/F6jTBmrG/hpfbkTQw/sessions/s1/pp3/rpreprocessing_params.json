@@ -1,0 +1,168 @@
+{
+  "target_remapping": [],
+  "numerical_combinations": {
+    "pairwiseLinear": false,
+    "polynomialInteraction": false
+  },
+  "per_feature": {
+    "number_project": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "Work_accident": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    },
+    "promotion_last_5years": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    },
+    "salary_coded": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    },
+    "last_evaluation": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "time_spend_company": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    },
+    "satisfaction_level": {
+      "generate_derivative": false,
+      "impute_constant_value": 0.0,
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "TARGET",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "DoubleMeaning"
+      }
+    },
+    "average_workhour_class": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "dssWantsToModify": false,
+        "recordedMeaning": "LongMeaning"
+      }
+    }
+  },
+  "deduplication": {
+    "enabled": false
+  },
+  "reduce": {
+    "enabled": false,
+    "kept_variance": 0.0
+  },
+  "featureSelection": {
+    "kind": "NONE",
+    "filterOnlyKBestNbToKeep": 10
+  }
+}

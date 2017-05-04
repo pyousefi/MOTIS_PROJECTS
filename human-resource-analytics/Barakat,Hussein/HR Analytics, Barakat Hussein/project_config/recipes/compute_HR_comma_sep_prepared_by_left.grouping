@@ -1,0 +1,177 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "left",
+      "type": "bigint"
+    }
+  ],
+  "values": [
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "satisfaction_level",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "last_evaluation",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "number_project",
+      "count": false,
+      "sum": false,
+      "type": "double",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "average_montly_hours",
+      "count": false,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "time_spend_company",
+      "count": false,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "Work_accident",
+      "count": false,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "promotion_last_5years",
+      "count": false,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "sales",
+      "count": false,
+      "sum": false,
+      "type": "string",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "salary",
+      "count": false,
+      "sum": false,
+      "type": "string",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "last": false,
+      "max": false,
+      "column": "salary_coded",
+      "count": false,
+      "sum": false,
+      "type": "bigint",
+      "first": false
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}

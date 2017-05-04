@@ -1,0 +1,18 @@
+{
+    "details": {
+        "sales": {
+            "levels": [
+                "sales", 
+                "technical", 
+                "support", 
+                "IT", 
+                "product_mng", 
+                "marketing", 
+                "RandD", 
+                "accounting", 
+                "hr"
+            ], 
+            "with_others": true
+        }
+    }
+}

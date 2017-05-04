@@ -1,0 +1,124 @@
+{
+    "per_feature": {
+        "promotion_last_5years": {
+            "stats": {
+                "std": 0.14641623751473798, 
+                "p99": 1.0, 
+                "min": 0.0, 
+                "max": 1.0, 
+                "average": 0.021915972820365587, 
+                "median": 0.0
+            }, 
+            "missing_impute_with_value": 0.021915972820365587
+        }, 
+        "Work_accident": {
+            "stats": {
+                "std": 0.35402714127773166, 
+                "p99": 1.0, 
+                "min": 0.0, 
+                "max": 1.0, 
+                "average": 0.14690400995310557, 
+                "median": 0.0
+            }, 
+            "missing_impute_with_value": 0.14690400995310557
+        }, 
+        "satisfaction_level": {
+            "stats": {
+                "std": 0.24912181967509414, 
+                "p99": 0.99, 
+                "min": 0.09, 
+                "max": 1.0, 
+                "average": 0.612212651928407, 
+                "median": 0.65
+            }, 
+            "missing_impute_with_value": 0.612212651928407
+        }, 
+        "sales": {
+            "stats": {
+                "mostFrequentValue": "sales", 
+                "leastFrequentValue": "management"
+            }, 
+            "category_possible_values": [
+                "sales", 
+                "technical", 
+                "support", 
+                "IT", 
+                "product_mng", 
+                "marketing", 
+                "RandD", 
+                "accounting", 
+                "hr"
+            ]
+        }, 
+        "salary_coded": {
+            "stats": {
+                "std": 0.6387806404219615, 
+                "p99": 3.0, 
+                "min": 1.0, 
+                "max": 3.0, 
+                "average": 1.5891472868217054, 
+                "median": 2.0
+            }, 
+            "missing_impute_with_value": 1.5891472868217054
+        }, 
+        "average_montly_hours": {
+            "stats": {
+                "std": 50.10373372441426, 
+                "p99": 300.52000000000044, 
+                "min": 96.0, 
+                "max": 310.0, 
+                "average": 200.78868791271893, 
+                "median": 199.0
+            }, 
+            "missing_impute_with_value": 200.78868791271893
+        }, 
+        "last_evaluation": {
+            "stats": {
+                "std": 0.17135730641534075, 
+                "p99": 1.0, 
+                "min": 0.36, 
+                "max": 1.0, 
+                "average": 0.7176753756340273, 
+                "median": 0.72
+            }, 
+            "missing_impute_with_value": 0.7176753756340273
+        }, 
+        "number_project": {
+            "stats": {
+                "std": 1.2372451001393963, 
+                "p99": 7.0, 
+                "min": 2.0, 
+                "max": 7.0, 
+                "average": 3.8013207005455065, 
+                "median": 4.0
+            }, 
+            "missing_impute_with_value": 3.8013207005455065
+        }, 
+        "time_spend_company": {
+            "stats": {
+                "std": 1.4614836452703215, 
+                "p99": 10.0, 
+                "min": 2.0, 
+                "max": 10.0, 
+                "average": 3.4991865250263183, 
+                "median": 3.0
+            }, 
+            "missing_impute_with_value": 3.4991865250263183
+        }, 
+        "left": {
+            "stats": {}
+        }
+    }, 
+    "feature_order": [
+        "promotion_last_5years", 
+        "Work_accident", 
+        "satisfaction_level", 
+        "sales", 
+        "salary_coded", 
+        "average_montly_hours", 
+        "last_evaluation", 
+        "number_project", 
+        "time_spend_company", 
+        "left"
+    ]
+}

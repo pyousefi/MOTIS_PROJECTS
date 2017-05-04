@@ -1,0 +1,101 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "samplingMethod": "RANDOM_FIXED_NB",
+      "maxRecords": 1000000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.7,
+    "ssdSeed": 1337,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 2,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1493646124206,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dHR_comma_sep_prepared,sel\u003d(method\u003drandom-fixednb,records\u003d1000000),r\u003d0.7,s\u003d1337",
+  "instanceId": "87c84f96535e984e5a5ef9d4ecc4e940-2",
+  "format": "csv1",
+  "schema": {
+    "userModified": false,
+    "columns": [
+      {
+        "name": "satisfaction_level",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "last_evaluation",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "number_project",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "average_montly_hours",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "time_spend_company",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Work_accident",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "left",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "promotion_last_5years",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "sales",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "salary_coded",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      }
+    ]
+  },
+  "trainPath": "train-87c84f96535e984e5a5ef9d4ecc4e940-2.csv",
+  "testPath": "test-87c84f96535e984e5a5ef9d4ecc4e940-2.csv",
+  "trainRows": 10449,
+  "testRows": 4550,
+  "fullRows": 0
+}

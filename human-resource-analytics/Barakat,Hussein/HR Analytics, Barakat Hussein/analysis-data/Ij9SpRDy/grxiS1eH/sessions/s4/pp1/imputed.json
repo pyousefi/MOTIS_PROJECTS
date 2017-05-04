@@ -1,0 +1,24 @@
+{
+    "num_values": [
+        0.021915972820365587, 
+        0.14690400995310557, 
+        0.612212651928407, 
+        1.5891472868217054, 
+        200.78868791271893, 
+        0.7176753756340273, 
+        3.8013207005455065, 
+        3.4991865250263183
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "promotion_last_5years", 
+        "Work_accident", 
+        "satisfaction_level", 
+        "salary_coded", 
+        "average_montly_hours", 
+        "last_evaluation", 
+        "number_project", 
+        "time_spend_company"
+    ]
+}

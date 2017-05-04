@@ -1,0 +1,52 @@
+{
+    "modelInputIsSparse": false, 
+    "modelInputNRows": 11943, 
+    "modelInputNCols": 23, 
+    "modelInputMemory": 2197512, 
+    "rawImportance": {
+        "variables": [
+            "Work_accident", 
+            "average_montly_hours", 
+            "last_evaluation", 
+            "left", 
+            "number_project", 
+            "promotion_last_5years", 
+            "satisfaction_level", 
+            "dummy:salary:low", 
+            "dummy:salary:medium", 
+            "dummy:salary:high", 
+            "dummy:sales:sales", 
+            "dummy:sales:technical", 
+            "dummy:sales:support", 
+            "dummy:sales:IT", 
+            "dummy:sales:product_mng", 
+            "dummy:sales:marketing", 
+            "dummy:sales:RandD", 
+            "dummy:sales:accounting", 
+            "dummy:sales:hr", 
+            "dummy:sales:__Others__"
+        ], 
+        "importances": [
+            0.020348456795746699, 
+            0.096754311309971586, 
+            0.12101182664543379, 
+            0.10208027673005401, 
+            0.14741320046367798, 
+            0.026643140848643797, 
+            0.30041072917512296, 
+            0.0093369192288465415, 
+            0.012468858989432537, 
+            0.043751674874576797, 
+            0.0090318723094169936, 
+            0.0051051419196872895, 
+            0.0047197185962474719, 
+            0.0021686170452057335, 
+            0.0039713851598659278, 
+            0.0081959515234014974, 
+            0.0019060727569156137, 
+            0.0044409370557138847, 
+            0.0029829905772932506, 
+            0.07725791799474567
+        ]
+    }
+}

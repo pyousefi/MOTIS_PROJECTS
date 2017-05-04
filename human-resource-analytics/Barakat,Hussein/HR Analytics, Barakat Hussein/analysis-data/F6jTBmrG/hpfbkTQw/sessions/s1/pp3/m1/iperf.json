@@ -1,0 +1,26 @@
+{
+    "modelInputIsSparse": false, 
+    "modelInputNRows": 11943, 
+    "modelInputNCols": 7, 
+    "modelInputMemory": 668808, 
+    "rawImportance": {
+        "variables": [
+            "Work_accident", 
+            "average_workhour_class", 
+            "last_evaluation", 
+            "number_project", 
+            "promotion_last_5years", 
+            "salary_coded", 
+            "time_spend_company"
+        ], 
+        "importances": [
+            3.2045320365075923e-07, 
+            0.061090562743441337, 
+            0.12397920506655181, 
+            0.77002533422895758, 
+            0.00044744789664254934, 
+            0.00046448061178481766, 
+            0.043992648999418273
+        ]
+    }
+}
