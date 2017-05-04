@@ -10,4 +10,4 @@
 	- You will update the readme.md file to include information about the competition (similar to the landing page for the project)
 	- Create a jupyter python notebook with your work in DSS and export it to your top level project directory
 	- Create a DSS directory and place your project ZIP file in that directory.
-1. A report explaining what you did, why you did it, and what you concluded.
+	- A report explaining what you did, why you did it, and what you concluded.
