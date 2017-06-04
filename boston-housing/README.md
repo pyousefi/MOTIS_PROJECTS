@@ -1,5 +1,5 @@
-## [Boston Housing](https://inclass.kaggle.com/c/boston-housing)
-# Housing Values in Suburbs of Boston
+# [Boston Housing](https://inclass.kaggle.com/c/boston-housing)
+## Housing Values in Suburbs of Boston
 
 The medv variable is the target variable.
 
