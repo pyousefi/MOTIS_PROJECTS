@@ -12,7 +12,7 @@ The objective of this task is to predict keypoint positions on face images. This
 
 Detecing facial keypoints is a very challenging problem.  Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement.
 
-This getting-started competition provides a benchmark data set and an R tutorial to get you going on analysing face images. Get started with R >>
+This getting-started competition provides a benchmark data set and an R tutorial to get you going on analysing face images. [Get started with R >>](https://www.kaggle.com/c/facial-keypoints-detection/details/getting-started-with-r)
 
 ### Acknowledgements
 
