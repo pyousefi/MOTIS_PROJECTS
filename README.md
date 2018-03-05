@@ -1,5 +1,5 @@
 # MOTIS
-Students Data Science Projects from [Kaggle](https://www.kaggle.com/)
+Students Data Science Projects from [Kaggle](https://www.kaggle.com/) 
 
 1. Create an account on Github (using your personal email)
 1. Fork this repo and clone it locally (Google it if you don't know how. I suggest using a tool like SourceTree)
